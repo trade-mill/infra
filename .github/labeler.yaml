@@ -1,0 +1,33 @@
+enable:
+  issues: true
+  prs: true
+
+comments:
+  prs: |
+    Labeler has applied any labels matching special text in your title and description.
+
+labels:
+  'chore':
+    include:
+    - '\bchore\b'
+  'docs':
+    include:
+    - '\bdocs\b'
+  'feat':
+    include:
+    - '\bfeat\b'
+  'fix':
+    include:
+    - '\bfix\b'
+  'refactor':
+    include:
+    - '\brefactor\b'
+  'remove':
+    include:
+    - '\bremove\b'
+  'style':
+    include:
+    - '\bstyle\b'
+  'test':
+    include:
+    - '\btest\b'
