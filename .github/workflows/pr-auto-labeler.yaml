@@ -1,4 +1,4 @@
-name: PR Auto Labeler
+name: Pull Request AutoLabeler
 
 on:
   pull_request_target:
@@ -9,15 +9,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  apply-labels:
+  labeler:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/labeler@v5
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/labeler.yaml
-
-      - name: Log result
-        if: always()
-        run: |
-          echo "Labeled PR #${{ github.event.pull_request.number }} in ${{ github.repository }}"

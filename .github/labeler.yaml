@@ -1,31 +1,23 @@
-chore:
-- pr-title:
-  - '\bchore\b'
-
-docs:
-- pr-title:
-  - '\bdocs\b'
-
 feat:
-- pr-title:
-  - '\bfeat\b'
+- head-branch: [ '^feat', 'feat/' ]
 
 fix:
-- pr-title:
-  - '\bfix\b'
+- head-branch: [ '^fix', 'fix/' ]
+
+chore:
+- head-branch: [ '^chore', 'chore/' ]
+
+docs:
+- head-branch: [ '^docs', 'docs/' ]
 
 refactor:
-- pr-title:
-  - '\brefactor\b'
+- head-branch: [ '^refactor', 'refactor/' ]
 
 remove:
-- pr-title:
-  - '\bremove\b'
+- head-branch: [ '^remove', 'remove/' ]
 
 style:
-- pr-title:
-  - '\bstyle\b'
+- head-branch: [ '^style', 'style/' ]
 
 test:
-- pr-title:
-  - '\btest\b'
+- head-branch: [ '^test', 'test/' ]
