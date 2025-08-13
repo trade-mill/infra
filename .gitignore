@@ -1,5 +1,6 @@
 # .terraform (provider binaries, external module source code, …)
 **/.terraform/*
+
 # state files
 *.tfstate
 *.tfstate.*
